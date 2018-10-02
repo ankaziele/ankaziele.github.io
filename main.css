@@ -7,7 +7,16 @@ body{
 .navbar{
 height: 100px;
 width: 100%;
-background-color: #020107
+background-color: #120f31;
+/* overflow: hidden; */
+position: fixed;
+z-index: 101;
+opacity: 0.75;
+margin-top: -100px;
+flex-direction: row;
+}
+
+
 
 }
  .logo{
@@ -17,32 +26,39 @@ background-color: #020107
 }
 
 .menu-bar {
-
-    display: flex;
-    flex-direction: column;
     width: 100%;
     display: flex;
-    align-items: flex-start;
+    justify-content: flex-end;
+    margin-top: -100px;
+   
 }
 
 .menu-item {
-
+    float: left;
     padding: 15px;
     background: orangered;
-    margin: 1%;
     width: 100px;
     text-align: center;
 }
 
 .banner-container{
-    
+    margin-top: 80px;
     display: flex;
-    justify-content: flex-end;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
 }
 
 .image-banner{
-    
-    width: 40%;
+    height: 300px;
+    width: 100%;
+    margin-top: 100px;
+
+}
+
+h1{
+    margin-left: 200px;
 }
 
 
@@ -51,9 +67,10 @@ background-color: #020107
 }
   .features {
         display: flex;
-        justify-content: space-between;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         width: 100%;
-        background-color: #020107;
         padding: 2px;
         
         
@@ -62,23 +79,33 @@ background-color: #020107
 .feature-item {
 
         height: auto;
-        width: 45%;
-        margin: auto;
-        padding-left: 5px;
+        width: 95%;
         color: white;
-        align-items: center;
         opacity: 0.75;
-        
-
+        display: flex;
+        justify-content: center;
     }
 
-.feature-item2{
+    .code, .marketing, .hobby{
+        height: 300px;
+        width: 95%;
+        background-color: #120f31;
+        margin: 20px 0px;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+  
+
+/* .feature-item2{
     width: 30%;
     background-color: #020107;
     align-items: center;
 
 
-}
+} */
 .img-fluid{
     border-radius: 50%;
 }
@@ -100,19 +127,26 @@ background-color: #020107
       
 }
 .smbuttons{
-    display: grid;
-    align-items: center;
-    justify-content: center;
+    
     grid-template-columns: 10vh 10vh;
     grid-template-rows: 10vh 10vh;
+    display: flex;
+        flex-direction: row;
+        justify-content: center;
 }
 
 /* Style all font awesome icons */
 .fa {
     font-size: 30px;
+    height: 70px;
     width: 70px;
-    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     text-decoration: none;
+    margin: 3px;
+    border-radius: 50%;
 }
 
 /* Add a hover effect if you want */
@@ -126,6 +160,8 @@ background-color: #020107
 .fa-facebook {
     background: #3B5998;
     color: white;
+    text-align: center;
+    align-self: center;
     /* vertical-align: baseline; */
 }
 
@@ -164,11 +200,7 @@ background-color: #020107
     /* vertical-align: baseline; */
 }
 
-.smbuttons{
-    display: flex;
-    justify-content: center;
-    /* vertical-align: baseline; */
-}
+
 
 /* @media screen and (max-width: 692px) {
     .features {
