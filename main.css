@@ -48,13 +48,18 @@ flex-direction: row;
     align-items: center;
     justify-content: space-between;
     width: 100%;
+    height: auto;
 }
 
-.image-banner{
-    height: 300px;
-    width: 100%;
+.image-banner.img{
+    height: auto;
+    width: 50%;
     margin-top: 100px;
+}
 
+img{
+    height: auto;
+    width: 100%;
 }
 
 h1{
@@ -62,9 +67,7 @@ h1{
 }
 
 
-.navbar-light{
-    background-color: white;
-}
+
   .features {
         display: flex;
         flex-direction: column;
@@ -87,7 +90,7 @@ h1{
     }
 
     .code, .marketing, .hobby{
-        height: 300px;
+        height: auto;
         width: 95%;
         background-color: #120f31;
         margin: 20px 0px;
@@ -128,11 +131,9 @@ h1{
 }
 .smbuttons{
     
-    grid-template-columns: 10vh 10vh;
-    grid-template-rows: 10vh 10vh;
     display: flex;
-        flex-direction: row;
-        justify-content: center;
+    flex-direction: row;
+    justify-content: center;
 }
 
 /* Style all font awesome icons */
@@ -202,15 +203,15 @@ h1{
 
 
 
-/* @media screen and (max-width: 692px) {
+@media screen and (max-width: 692px) {
     .features {
-        background-color: black;
+    
         padding: 10px;
         display: flex;
         flex-direction: column-reverse;
         align-content: center;
         color: white;
-} */
+} 
 
 /* .feature-item2{
     width: 80%;
