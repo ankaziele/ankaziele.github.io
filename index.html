@@ -7,8 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Anka Zet - Junior Front End Developer in Progress</title>
     <link rel="icon" href="images/smartup-logo-8.png" type="image/x-icon">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
-        crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="main.css">
     <link href="https://fonts.googleapis.com/css?family=Handlee" rel="stylesheet">
@@ -19,15 +18,21 @@
 
 <body>
     <nav class="navbar">
+            <div class="toggle">
+                    <i class="fa fa-bars menu" aria-hidden="true"></i>
+            </div>
         <div>
         <img class="logo" src="images/smartup-logo.png"></img>
         </div>
         <div class="menu-bar">
-            <a class="menu-item" href="#home">Home</a>
-            <a class="menu-item" href="#about-me">About Me</a>
-            <a class="menu-item" href="#contact-me">Contact</a>
+                <ul class="menu-items">
+                        <li><a class="menu-item" href="#home">Home</a></li>
+                        <li><a class="menu-item" href="#about-me">About</a></li>
+                        <li><a class="menu-item" href="#contact-me">Contact</a></li>
+                    </ul> 
         </div>
     </nav>
+<div class="space"></div>
     <div class="hero">
         <div id="home" class="banner-container">
             <img class"image-banner" src="images/face-base2.png" alt="Front End Digital Ninja">
@@ -117,7 +122,14 @@
         </div>
 
     </footer>
-
+    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function(){
+        $('.menu').click(function(){
+            $('ul').toggleClass('active');
+        })
+    })
+    </script>
 </body>
 
 </html>

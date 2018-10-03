@@ -67,11 +67,11 @@ ul{
     
         ul li{
             display: block;
-            text-align: center
+            text-align: center;
         }
 
         .active{
-            display: block;
+            display: block;          
         }
     }
     
