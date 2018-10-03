@@ -1,6 +1,22 @@
+body{
+    background-color: #4d37b6;
+    color: white;
+    font-family: 'Source Code Pro', monospace;
+}
+
+
+
+nav{
+    width: 100%;
+    background: #120f31;
+    display: flex;
+    flex-direction: row-reverse;
+
+}
+
 ul{
     width: 80%;
-    margin: 0 auto;
+    margin: 0, auto;
     padding: 0;
     }
     
@@ -8,7 +24,7 @@ ul{
         list-style: none;
         display: inline-block;
         padding: 20px;
-        /* line-height: 50px; */
+        line-height: 50px;
     
     }
     
@@ -25,16 +41,7 @@ ul{
     ul li a:hover{
         text-decoration: none;
     }
-    
-    .hamburger-menu span{
-        background-color: red;
-        width: 40px;
-        height: 5px;
-        display: block;
-        margin-bottom: 5px;
-        text-align: right;
-    
-    }
+
     
     .toggle{
         width: 100%;
@@ -45,6 +52,8 @@ ul{
         font-size: 30px;
         display: none;
     }
+
+
     
     @media (max-width: 768px){
         .toggle{
@@ -53,12 +62,16 @@ ul{
     
         ul{
             width: 100%;
-    
+            display: none;
         }
     
         ul li{
             display: block;
             text-align: center
+        }
+
+        .active{
+            display: block;
         }
     }
     
