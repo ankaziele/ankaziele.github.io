@@ -248,10 +248,12 @@ footer{
     margin: auto;
     margin-top: 20px;
     padding: 10px;
-    
+    text-decoration:none;
     text-align: center;
     background-color: #020107aa;
 }
+
+
 
 @media (max-width: 768px){
     .toggle{
