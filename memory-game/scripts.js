@@ -33,7 +33,7 @@ function checkForMatch() {
 
   let isMatch = firstCard.dataset.hobby === secondCard.dataset.hobby
 
-  isMatch ? disableCards() : unflipCards();
+  isMatch ? removeCards() : unflipCards();
 
 }
 
@@ -61,6 +61,15 @@ function resetBoard(){
   [hasFlippedCard, lockBoard] = [false, false];
   [firstCard, secondCard] = [null, null];
 
+}
+
+function removeCards() {
+  lockBoard = true;
+  setTimeout(() => {
+      firstCard.style.visibility = "hidden";
+      secondCard.style.visibility = "hidden";
+      resetBoard();
+  }, 1500);
 }
 
 (function shuffle(){

@@ -71,11 +71,12 @@ ul{
     
 }
 
-.image-banner.img{
+.face.img{
     height: auto;
     width: 50%;
-    position: relative;
-    z-index: 80;
+    position: fixed;
+    z-index:-80;
+    bacground-repeat: no-repeat;
     
     
 }
@@ -409,7 +410,7 @@ footer{
             
         }
 
-        .image-banner.img{
+        .face.img{
             height: auto;
             width: 50%;
             position: relative;
