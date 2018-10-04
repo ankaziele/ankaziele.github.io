@@ -1,0 +1,473 @@
+body{
+    background-color: #4d37b6;
+    color: white;
+    margin: -8px auto;
+    /* font-family: 'Poppins', sans-serif; */
+    /* font-family: 'Raleway', sans-serif; */
+    /* font-family: 'Crete Round', serif; */
+    /* font-family: 'PT Sans Caption', sans-serif; */
+    /* font-family: 'Source Code Pro', monospace; */
+}
+nav{
+    width: 100%;
+    background: #120f31;
+    display: flex; 
+    position: fixed;
+    z-index: 101;
+    
+}
+
+.logo{
+    width: 80%;
+    padding-top: 10px;
+    padding-left: 10px;
+    text-align: center;
+    height: auto;
+}
+
+ul{
+    width: 60%;
+    margin: 0, auto;
+    padding: 0;
+    }
+    
+    ul li{
+        list-style: none;
+        display: inline-block;
+        padding: 20px;
+        line-height: 50px;
+    
+    }
+    
+    ul li a{
+        color: #fff;
+        text-decoration: none;
+    }
+    
+    ul li a:hover{
+        text-decoration: none;
+    }
+
+    .toggle{
+        width: 20%;
+        padding: 10px 10px;
+        background: #ef7036;
+        text-align: right;
+        box-sizing: border-box;
+        font-size: 30px;
+        display: none;
+    }
+
+    .face{
+        height: auto;
+        width: 100%;
+    }
+
+
+.space{
+    height: 100px;
+}
+
+/* .banner-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    align-content: center;
+    width: 100%;
+    
+} */
+
+/* .face.img{
+    height: auto;
+    width: 50%;
+    position: fixed;
+    z-index:-80;
+    background-repeat: no-repeat;
+    
+    
+} */
+
+/* img{
+    height: auto;
+    width: 100%;
+} */
+
+
+
+h1{
+   margin: 20px; 
+}
+
+
+.container-fluid {
+    margin: 12px;
+}
+
+.badge-secondary {
+    padding: 10px;
+    background-color: #ef7036;
+    border-radius: 8px;
+    margin-left: 15px;
+    
+}
+
+  .features {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /* width: 100%; */
+    }
+
+.feature-item {
+
+        height: auto;
+        width: 95%;
+        color: white;
+    
+        display: flex;
+        justify-content: center;
+    }
+
+    .code, .marketing, .hobby{
+        height: auto;
+        width: 95%;
+        background-color: #020107aa;
+        margin: 20px 0px;
+        padding: 20px;
+        border-radius: 5px;
+        /* display: flex;
+        flex-direction: column;
+        justify-content: center; */
+    }
+
+  
+
+ .main-h2{
+    padding: 10px;
+    background-color: #9bf6c0;
+    color: #020107aa;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.img-fluid{
+    border-radius: 50%;
+}
+
+.bg-light {
+    background-color: #020107aa; 
+}
+
+.contact{
+       
+        height: 300px;
+        width: 75%;
+        margin: auto;
+        margin-top: 50px;
+        color: white;
+        align-items: center;
+        padding-bottom: 5px;
+
+      
+}
+.smbuttons{
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+/* Style all font awesome icons */
+.fa {
+    font-size: 25px;
+    height: 60px;
+    width: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    margin: 3px;
+    border-radius: 50%;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+    opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+    text-align: center;
+    align-self: center;
+    /* vertical-align: baseline; */
+}
+
+/* Twitter */
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+    /* vertical-align: baseline; */
+}
+
+/* Github */
+.fa-github {
+    background: black;
+    color: white;
+    /* vertical-align: baseline; */
+}
+
+/* E-mail */
+.fa-envelope {
+    background: rgb(255, 51, 0);
+    color: white;
+    /* vertical-align: baseline; */
+}
+
+/* Google Plus*/
+.fa-google-plus {
+    background: #dd4b39;
+    color: white;
+    /* vertical-align: baseline; */
+}
+
+/* LinkedIn*/
+.fa-linkedin {
+    background: #0082ca;
+    color: white;
+    /* vertical-align: baseline; */
+}
+
+footer{
+    margin: auto;
+    margin-top: 20px;
+    padding: 10px;
+    text-decoration:none;
+    text-align: center;
+    background-color: #020107aa;
+}
+
+
+
+@media (max-width: 768px){
+    .toggle{
+        display: block;
+        justify-content: space-around;
+        align-items: center
+        
+    }
+
+    ul{
+        width: 100%;
+        height: auto;
+        display: none;
+    }
+
+    ul li{
+        display: block;
+        /
+    }
+
+    .active{
+        display: block;          
+    }
+    ul li:hover{
+        background: #ef7036;
+        
+        }
+
+}
+
+
+
+@media screen and (min-width: 769px) and (max-width: 999px){
+    nav{
+        /* height: 100px;
+        width: 100%; */
+        /* background-color: #120f31; */
+        /* overflow: hidden; */
+        /* position: fixed;
+        z-index: 101; */
+        /* opacity: 0.95;
+        display: flex;
+        justify-content: flex-end */
+
+        }
+        
+        /* .logo.img{
+            height: 80px;
+            width: 100%;
+          
+        } */
+        
+        .menu-bar {
+            width: 100%;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+
+        }
+        
+        .menu-item {
+            float: left;
+            padding: 5 15px;
+            background: #9bf6c0;
+            width: 100px;
+            text-align: center;
+            
+        } 
+        
+        ul{
+            /* width: 100%; */
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: flex-end;
+            }
+       
+            ul li a:hover{
+                background: #ef7036;
+                
+                }
+             
+         
+
+         /* ul li{
+                    list-style: none;
+                 }
+         
+                 ul li a:hover{
+                    text-decoration: none;
+                }
+                .logo{
+                    width: 100%;
+                }  */
+            
+}
+
+@media screen and (min-width: 1000px){
+
+   
+    /* nav{ */
+        /* height: 100px; */
+        /* width: 100%; */
+        /* background-color: #120f31; */
+        /* overflow: hidden; */
+        /* position: fixed; */
+        /* z-index: 101;
+        opacity: 0.95; */
+        /* display: flex;
+        justify-content: flex-end; */
+
+        /* } */
+        
+        /* .logo.img{
+            height: 80px;
+            width: 100%;
+          
+        } */
+        
+        .menu-bar {
+            width: 100%;
+            display: flex;
+            justify-content: flex-end;
+
+           
+        }
+        
+        .menu-item {
+            float: left;
+            padding: 5 15px;
+            background: #9bf6c0;
+            width: 100px;
+            text-align: center;
+            
+        } 
+        
+        ul{
+            /* width: 100%; */
+            /* margin: 0;
+            padding: 0; */
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            }
+       
+            ul li a:hover{
+                background: #ef7036;
+                
+                }
+             
+         
+
+         ul li{
+                    /* list-style: none; */
+                 }
+         
+                 /* ul li a:hover{
+                    text-decoration: none;
+                } */
+                .logo{
+                    width: 100%;
+                } 
+
+        /* .logo-container{
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+        } */
+
+        h1{
+            width: 80%;
+            margin-top: 100px;
+
+        
+        }
+
+        .banner-container{
+            display: flex;
+            flex-direction: row-reverse;
+            align-items: center;
+            width: 100%;
+            
+        }
+
+        .face{
+            margin-top: 300px;
+            height: 100vh;
+            width: 60%;
+            position: fixed;
+            background-repeat: no-repeat;
+            z-index: -10;
+        
+        }
+
+
+        .container-fluid{
+            width: 50%;
+            display: block;
+            justify-items: center;
+        }
+
+        
+
+        /* .face.img{
+            height: auto;
+            width: 50%;
+            position: relative;
+            z-index: 80;
+            
+            
+        } */
+        
+        /* img{
+            height: auto;
+            width: 100%;
+        } */
+}

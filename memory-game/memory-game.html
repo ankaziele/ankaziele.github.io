@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Memory Game - Brain Training!</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="../main.css">
+
+</head>
+<body>
+                <nav class="navbar">
+                                <div class="toggle">
+                                        <i class="fa fa-bars menu" aria-hidden="true"></i>
+                                </div>
+                            <div class="logo-container">
+                           <a href="../index.html"> <img class="logo" src="../images/smartup-logo.png"></img></a>
+                            </div>
+                            <div class="menu-bar">
+                                    <ul class="menu-items">
+                                            <li><a class="menu-item" href="../index.html">Home</a></li>
+                                            <li><a class="menu-item" href="../#about-me">About</a></li>
+                                            <li><a class="menu-item" href="../#contact-me">Contact</a></li>
+                                        </ul> 
+                            </div>
+                        </nav>
+   <section class="memory-game">
+       <div class="memory-card" data-hobby="bike">
+           <img class="front-face" src="img/bike.png" alt="Bike" />
+           <img class="back-face" src="img/back-face.png" alt="Back" />
+       </div>
+       <div class="memory-card" data-hobby="bike">
+            <img class="front-face" src="img/bike.png" alt="Bike" />
+            <img class="back-face" src="img/back-face.png" alt="Back" />
+        </div>
+       <div class="memory-card" data-hobby="books">
+            <img class="front-face" src="img/books.png" alt="Books" />
+            <img class="back-face" src="img/back-face.png" alt="Back" />
+        </div>
+        <div class="memory-card" data-hobby="books">
+                <img class="front-face" src="img/books.png" alt="Books" />
+                <img class="back-face" src="img/back-face.png" alt="Back" />
+            </div>
+        <div class="memory-card" data-hobby="dice">
+                <img class="front-face" src="img/dice.png" alt="Dice" />
+                <img class="back-face" src="img/back-face.png" alt="Back" />
+        </div>
+        <div class="memory-card" data-hobby="dice">
+                <img class="front-face" src="img/dice.png" alt="Dice" />
+                <img class="back-face" src="img/back-face.png" alt="Back" />
+        </div>
+        <div class="memory-card" data-hobby="run">
+                <img class="front-face" src="img/run.png" alt="Run" />
+                <img class="back-face" src="img/back-face.png" alt="Back" />
+        </div>
+        <div class="memory-card" data-hobby="run">
+                <img class="front-face" src="img/run.png" alt="Run" />
+                <img class="back-face" src="img/back-face.png" alt="Back" />
+        </div>
+        <div class="memory-card" data-hobby="ski">
+                <img class="front-face" src="img/ski.png" alt="Ski" />
+                <img class="back-face" src="img/back-face.png" alt="Back" />
+        </div>
+        <div class="memory-card" data-hobby="ski">
+                <img class="front-face" src="img/ski.png" alt="Ski" />
+                <img class="back-face" src="img/back-face.png" alt="Back" />
+        </div>
+        <div class="memory-card" data-hobby="snowboard">
+                <img class="front-face" src="img/snowboard.png" alt="Snowboard" />
+                <img class="back-face" src="img/back-face.png" alt="Back" />
+        </div>
+        <div class="memory-card" data-hobby="snowboard">
+                <img class="front-face" src="img/snowboard.png" alt="Snowboard" />
+                <img class="back-face" src="img/back-face.png" alt="Back" />
+        </div>
+            
+   </section>
+<script src="scripts.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function(){
+        $('.menu').click(function(){
+            $('ul').toggleClass('active');
+        })
+    })
+    </script>
+    <script src="../main.js"></script>
+</body>
+</html>
