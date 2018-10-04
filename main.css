@@ -281,7 +281,11 @@ footer{
     ul li:hover{
         background: #ef7036;
         
-        }
+    }
+
+    .menu-item{
+        color: white;
+    }
 
 }
 
@@ -405,11 +409,6 @@ footer{
                 
                 }
              
-         
-
-         ul li{
-                    /* list-style: none; */
-                 }
          
                  /* ul li a:hover{
                     text-decoration: none;
