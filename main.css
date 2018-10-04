@@ -74,6 +74,9 @@ ul{
 .image-banner.img{
     height: auto;
     width: 50%;
+    position: relative;
+    z-index: 80;
+    
     
 }
 
@@ -165,9 +168,9 @@ h2{
 
 /* Style all font awesome icons */
 .fa {
-    font-size: 30px;
-    height: 70px;
-    width: 70px;
+    font-size: 25px;
+    height: 60px;
+    width: 60px;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -260,83 +263,6 @@ footer{
 
 
 
-
-/* @media screen and (max-width: 692px) {
-    .features {
-    
-        padding: 10px;
-        display: flex;
-        flex-direction: column-reverse;
-        align-content: center;
-        color: white;
-}
-
-.feature-item2{
-    width: 80%;
-    background-color: black;
-    margin: auto;
-    margin-bottom: 20px;
-    
-}
-
-.feature-item3{
-    height: auto;
-        width: 65%;
-        margin: auto;
-        color: white);
-        background-color: black;
-        align-items: flex-start;
-}
-.smbuttons{
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-}
-} 
-
-}
-
-@media screen and (max-width: 692px) {
-
-    .navbar{
-        height: 100px;
-        width: 100%;
-        background-color: #120f31;
-        position: fixed;
-        z-index: 101;
-        opacity: 0.75;
-        margin-top: -100px;
-        flex-direction: row;
-        }
-
-        .logo{
-            height: 80px;
-            width: 80px;
-           
-        }
-        
-        .menu-bar {
-            width: 100%;
-            display: flex;
-            justify-content: flex-end;
-            margin-top: -100px;
-           
-        }
-        
-        .menu-item {
-            float: left;
-            padding: 15px;
-            background: orangered;
-            width: 100px;
-            text-align: center;
-        }
-
-
-
-
-
-} */
-
 @media screen and (min-width: 769px) and (max-width: 999px){
     nav{
         height: 100px;
@@ -412,7 +338,7 @@ footer{
         z-index: 101;
         opacity: 0.95;
         display: flex;
-        justify-content: flex-end
+        justify-content: flex-end;
 
         }
         
@@ -481,5 +407,19 @@ footer{
             align-items: center;
             width: 100%;
             
+        }
+
+        .image-banner.img{
+            height: auto;
+            width: 50%;
+            position: relative;
+            z-index: 80;
+            
+            
+        }
+        
+        img{
+            height: auto;
+            width: 100%;
         }
 }

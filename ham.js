@@ -1,17 +1,12 @@
-(function() {
+const face = document.querySelector('.image-banner')
 
-    var hamburger = {
-      navToggle: document.querySelector('.nav-toggle'),
-      nav: document.querySelector('nav'),
+face.addEventListener('scroll', function(){
+ var screenOffset = window.scrollY;
+    var heroOffset = screenOffset *0.3; //predkosc przesuwania
+
+    left.style.marginLeft = '-'+(heroOffset) + 'px';
+    left.style.bottom = (0 - screenOffset*0.5) + 'px';
+    right.style.marginRight = '-' + (heroOffset) + 'px';
+    right.style.bottom = (0 - screenOffset*0.5) + 'px';
   
-      doToggle: function(e) {
-        e.preventDefault();
-        this.navToggle.classList.toggle('expanded');
-        this.nav.classList.toggle('expanded');
-      }
-    };
-  
-    hamburger.navToggle.addEventListener('click', function(e) { hamburger.doToggle(e); });
-    hamburger.nav.addEventListener('click', function(e) { hamburger.doToggle(e); });
-  
-  }());
+})
