@@ -107,11 +107,12 @@ h1{
 
 .badge-secondary {
     padding: 10px;
-    background-color: #ef7036;
     border-radius: 8px;
     margin-left: 15px;
     
 }
+
+
 
   .features {
         display: flex;
@@ -254,7 +255,13 @@ footer{
     background-color: #020107aa;
 }
 
+.one{
+    background: #120f31;
+}
 
+.two{
+    background: #ef7036;
+}
 
 @media (max-width: 768px){
     .toggle{
