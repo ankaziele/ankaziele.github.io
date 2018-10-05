@@ -18,76 +18,91 @@
 
 <body>
     <nav class="navbar">
-            <div class="toggle">
-                    <i class="fa fa-bars menu" aria-hidden="true"></i>
-            </div>
+        <div class="toggle">
+            <i class="fa fa-bars menu" aria-hidden="true"></i>
+        </div>
         <div class="logo-container">
-       <a href="#home"> <img class="logo" src="images/smartup-logo.png"></img></a>
+            <a href="#home"> <img class="logo" src="images/smartup-logo.png"></img></a>
         </div>
         <div class="menu-bar">
-                <ul class="menu-items">
-                        <li><a class="menu-item" href="/memory-game/memory-game.html">Game</a></li>
-                        <li><a class="menu-item" href="#about-me">About</a></li>
-                        <li><a class="menu-item" href="#contact-me">Contact</a></li>
-                    </ul> 
+            <ul class="menu-items">
+                <li><a class="menu-item" href="/memory-game/memory-game.html">Game</a></li>
+                <li><a class="menu-item" href="#about-me">About</a></li>
+                <li><a class="menu-item" href="#contact-me">Contact</a></li>
+            </ul>
         </div>
     </nav>
-<div id="home" class="space"></div>
+    <div id="home" class="space"></div>
     <div class="hero">
         <div class="banner-container">
-            <img class = "face" src="images/face-base2.png" alt="Front End Digital Ninja">
+            <img class="face" src="images/face-base2.png" alt="Front End Digital Ninja">
             <h1>Junior Front-End Developer</h1>
         </div>
     </div>
     <div class="container-fluid">
         <h2> <span id="about-me" class="badge-secondary">About me</span></h2>
 
-        <div class="features">
-
-            <div class="feature-item">
-                <div class="code">
-                    <h2 class="main-h2">Me and The Code...</h2>
-                    <p>I'm a front end developer in progress. I'm a fighter trying to beat the shit out of HTML, CSS
-                        and
-                        JavaScript. </p>
-                </div>
-
-
-
-            </div>
-
-            <div class="feature-item">
-
-                <div class="marketing">
-
-                    <h2 class="main-h2">Me and Online Marketing...</h2>
-                    <p>A perfect combination of analysing all sort of date, creating and action plan and puting it to
-                        live just to see the results and steady growth. It was love at first sight. As a SEO Specialist
-                        I can help you gain visibility and get you to the top in Google SERP. </p>
-
-                </div>
-
-            </div>
-            <div class="feature-item">
-                <div class="hobby">
-                    <h2 class="main-h2">My passions</h2>
-                    <p> Few years ago I decided
-                        to follow my passion for new technologies and business. So I moved to the cloud. I currently
-                        work
-                        remotely with teams all over the world. In my spare time I’m a triathlete, passionate skier and
-                        board games' geek.
-                </div>
-
-            </div>
-
-            <!-- <div class="feature-item2">
-                <img src="images/zdjecie-az.png" class="img-fluid" alt="az">
-
-            </div> -->
+        <div class="about-navigation">
+            <span class="active">Code</span>
+            <span>SEO & SEM</span>
+            <span>Hobbys</span>
         </div>
+
+        <div class="feature-carousel">
+
+            <div class="features-prevoius-button"></div>
+            <div class="features-next-button"></div>
+            <div class="features">
+                <div class="feature-item">
+                    <div class="code">
+                        <h2 class="main-h2">Me and The Code...</h2>
+                        <p>I'm a front end developer in progress. I'm a fighter trying to beat the shit out of HTML,
+                            CSS
+                            and
+                            JavaScript. </p>
+                    </div>
+                </div>
+
+                <div class="feature-item">
+
+                    <div class="marketing">
+
+                        <h2 class="main-h2">Me and Online Marketing...</h2>
+                        <p>A perfect combination of analysing all sort of date, creating and action plan and puting it
+                            to
+                            live just to see the results and steady growth. It was love at first sight. As a SEO
+                            Specialist
+                            I can help you gain visibility and get you to the top in Google SERP. </p>
+
+                    </div>
+
+                </div>
+                <div class="feature-item">
+                    <div class="hobby">
+                        <h2 class="main-h2">My passions</h2>
+                        <p> Few years ago I decided
+                            to follow my passion for new technologies and business. So I moved to the cloud. I
+                            currently
+                            work
+                            remotely with teams all over the world. In my spare time I’m a triathlete, passionate skier
+                            and
+                            board games' geek.
+                    </div>
+
+                </div>
+
+                <!-- <div class="feature-item2">
+                <img src="images/zdjecie-az.png" class="img-fluid" alt="az">
+    
+            </div> -->
+            </div>
+        </div>
+
+
+
     </div>
     <div class="container-fluid">
-        <h2> <span id="contact-me" class="badge-secondary">Contact me</span></h2>
+        <!-- <h2> <span id="contact-me" class="badge-secondary">Contact me</span></h2> -->
 
         <div class="features">
 
@@ -124,11 +139,11 @@
     </footer>
     <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
     <script type="text/javascript">
-    $(document).ready(function(){
-        $('.menu').click(function(){
-            $('ul').toggleClass('active');
+        $(document).ready(function () {
+            $('.menu').click(function () {
+                $('ul').toggleClass('active');
+            })
         })
-    })
     </script>
     <script src="main.js"></script>
 </body>
