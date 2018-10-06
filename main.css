@@ -139,20 +139,13 @@ h1{
 
 
 .slideshow-container {
-    width: 30%;
+    display: block;
+    width: 25%;
     position: relative;
     margin: auto;
-    display:flex;
-    justify-content: center;
-
 }
 .slides {
     display: none;
-
-}
-
-.slides img{
-    width: 100%;
 
 }
 /* Wszystkie slajdy sa schowane
@@ -162,17 +155,16 @@ wtedy on jeden bedzie widoczny */
     position: absolute;
     padding: 8px 12px;
     color: #120f31;
-    font-weight: bold
+    font-weight: bold;
 }
 /* position absolute umieszcza element w prawym gornym rogu rodzica */
 .caption {
-    width: 100%;
+    
     text-align: center;
     position: absolute;
     padding: 8px 16px;
     bottom: 10px;
-    display: flex;
-    justify-content: center;
+
 }
 /* dodanie bottom 8px sprawia ze caption wskakuje na slide */
 
@@ -194,7 +186,7 @@ wtedy on jeden bedzie widoczny */
 /* powyzej przenosimy strzalki na srodek slidera
 a ponizej rozdzielamy prawo/lewo */
 .next {
-    right: 5px;
+    right: 1px;
     border-radius: 5px 0 0 5px;
 }
 .prev:hover,
@@ -203,17 +195,20 @@ a ponizej rozdzielamy prawo/lewo */
 }
 .dots-container{
     display: flex;
-    flex-direction: column;
+    justify-content: center;
 }
 
 .dots {
     width: 13px;
     height: 13px;
+    margin: 2px;
     display: inline-block;
-    background: grey;
+    background: #2ff07c;
     border-radius: 50%;
     cursor: pointer;
 }
+
+
 .fade {
     animation-name: fade;
     animation-duration: 0.8s;
@@ -227,8 +222,12 @@ a ponizej rozdzielamy prawo/lewo */
         opacity: 1
     }
 }
-.active ,.dots:hover{
-    background: #6f38ee;
+.active{
+    background: #120f31;
+}
+
+.dots:hover{
+    background: #ef7036;
 }
 
 .slides img{
@@ -378,6 +377,15 @@ footer{
 
     .menu-item{
         color: white;
+    }
+
+    .slideshow-container {
+        display: block;
+        width: 50%;
+        position: relative;
+        margin: auto;
+       
+    
     }
 
 }
