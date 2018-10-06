@@ -120,7 +120,7 @@ h1{
 
  .main-h2{
     padding: 10px;
-    background-color: #9bf6c0;
+    background-color: #2ff07c;
     color: #020107aa;
     border-radius: 5px;
     text-align: center;
@@ -231,6 +231,10 @@ a ponizej rozdzielamy prawo/lewo */
     background: #6f38ee;
 }
 
+.slides img{
+    border-radius: 15px;
+    width: 100%;
+}
 
 /* my skills! */
 
@@ -241,8 +245,16 @@ a ponizej rozdzielamy prawo/lewo */
         margin: auto;
         margin-top: 50px;
         color: white;
+        display:flex;
+        flex-direction: column; 
         align-items: center;
         padding-bottom: 5px;        
+}
+
+.mail img{
+ border-radius: 15px;
+ width: 100%;
+
 }
 .smbuttons{
     
@@ -385,7 +397,7 @@ footer{
         .menu-item {
             float: left;
             padding: 5 15px;
-            background: #9bf6c0;
+            background: #2ff07c;
             width: 100px;
             text-align: center;
             
@@ -418,7 +430,7 @@ footer{
         .menu-item {
             float: left;
             padding: 5 15px;
-            background: #9bf6c0;
+            background: #2ff07c;
             width: 100px;
             text-align: center;
             

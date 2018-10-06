@@ -24,7 +24,7 @@ function toggleClasses(element, classes, time){
 }
 
 toggleClasses(
-    document.querySelector('.marketing'),
+    document.querySelector('.code'),
     ['one', 'two'],
     3000
 )
