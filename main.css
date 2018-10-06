@@ -1,5 +1,5 @@
 body{
-    background-color: #4d37b6;
+    background-color: #0814bed8;
     color: white;
     margin: -8px auto;
     /* font-family: 'Poppins', sans-serif; */
@@ -60,9 +60,14 @@ ul{
         display: none;
     }
 
+    .banner-container{
+        position: relative;
+    }
+
     .face{
         height: auto;
         width: 100%;
+        position: relative;
     }
 
 
@@ -148,16 +153,14 @@ h1{
     display: none;
 
 }
-/* Wszystkie slajdy sa schowane
-do 1 slajda w html dodajemy style display:block 
-wtedy on jeden bedzie widoczny */
+
 .number {
     position: absolute;
     padding: 8px 12px;
     color: #120f31;
     font-weight: bold;
 }
-/* position absolute umieszcza element w prawym gornym rogu rodzica */
+
 .caption {
     
     text-align: center;
@@ -166,7 +169,7 @@ wtedy on jeden bedzie widoczny */
     bottom: 10px;
 
 }
-/* dodanie bottom 8px sprawia ze caption wskakuje na slide */
+
 
 
 .prev,
@@ -182,9 +185,6 @@ wtedy on jeden bedzie widoczny */
     
 }
 
-
-/* powyzej przenosimy strzalki na srodek slidera
-a ponizej rozdzielamy prawo/lewo */
 .next {
     right: 1px;
     border-radius: 5px 0 0 5px;
@@ -213,7 +213,7 @@ a ponizej rozdzielamy prawo/lewo */
     animation-name: fade;
     animation-duration: 0.8s;
 }
-/* keyframes daje wytyczne dla animacji */
+
 @keyframes fade {
     from {
         opacity: 0.4
