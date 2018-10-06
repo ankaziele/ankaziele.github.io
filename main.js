@@ -1,13 +1,13 @@
-// var faceImage = document.querySelector('.face');
+var faceImage = document.querySelector('.banner-container');
 
-// window.addEventListener('scroll', function(){
-//    var screenOffset = window.scrollY;
-//     var faceOffset = screenOffset * 0.5; //predkosc przesuwania
+window.addEventListener('scroll', function(){
+   var screenOffset = window.scrollY;
+    var faceOffset = screenOffset * 0.7; //predkosc przesuwania
 
-//     faceImage.style.paddingTop = (faceOffset) + 'px';
+    faceImage.style.marginLeft = (faceOffset) + 'px';
     
     
-// })
+})
 
 
 
