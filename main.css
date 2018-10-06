@@ -4,9 +4,10 @@ body{
     margin: -8px auto;
     /* font-family: 'Poppins', sans-serif; */
     /* font-family: 'Raleway', sans-serif; */
-    font-family: 'Crete Round', serif;
+    /* font-family: 'Crete Round', serif; */
     /* font-family: 'PT Sans Caption', sans-serif; */
     /* font-family: 'Source Code Pro', monospace; */
+    font-family: 'Inconsolata', monospace;
 }
 nav{
     width: 100%;
@@ -69,33 +70,6 @@ ul{
     height: 100px;
 }
 
-/* .banner-container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    align-content: center;
-    width: 100%;
-    
-} */
-
-/* .face.img{
-    height: auto;
-    width: 50%;
-    position: fixed;
-    z-index:-80;
-    background-repeat: no-repeat;
-    
-    
-} */
-
-/* img{
-    height: auto;
-    width: 100%;
-} */
-
-
-
 h1{
    margin: 20px; 
 }
@@ -139,9 +113,7 @@ h1{
         margin: 20px 0px;
         padding: 20px;
         border-radius: 5px;
-        /* display: flex;
-        flex-direction: column;
-        justify-content: center; */
+
     }
 
   
@@ -161,6 +133,106 @@ h1{
 .bg-light {
     background-color: #020107aa; 
 }
+
+
+/* my skills!!! */
+
+
+.slideshow-container {
+    width: 30%;
+    position: relative;
+    margin: auto;
+    display:flex;
+    justify-content: center;
+
+}
+.slides {
+    display: none;
+
+}
+
+.slides img{
+    width: 100%;
+
+}
+/* Wszystkie slajdy sa schowane
+do 1 slajda w html dodajemy style display:block 
+wtedy on jeden bedzie widoczny */
+.number {
+    position: absolute;
+    padding: 8px 12px;
+    color: #120f31;
+    font-weight: bold
+}
+/* position absolute umieszcza element w prawym gornym rogu rodzica */
+.caption {
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    padding: 8px 16px;
+    bottom: 10px;
+    display: flex;
+    justify-content: center;
+}
+/* dodanie bottom 8px sprawia ze caption wskakuje na slide */
+
+
+.prev,
+.next {
+    position: absolute;
+    top: 40%;
+    color: #120f31;
+    font-weight: bold;
+    font-size: 25px;
+    padding: 5px;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    
+}
+
+
+/* powyzej przenosimy strzalki na srodek slidera
+a ponizej rozdzielamy prawo/lewo */
+.next {
+    right: 5px;
+    border-radius: 5px 0 0 5px;
+}
+.prev:hover,
+.next:hover {
+    background: white;
+}
+.dots-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.dots {
+    width: 13px;
+    height: 13px;
+    display: inline-block;
+    background: grey;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.fade {
+    animation-name: fade;
+    animation-duration: 0.8s;
+}
+/* keyframes daje wytyczne dla animacji */
+@keyframes fade {
+    from {
+        opacity: 0.4
+    }
+    to {
+        opacity: 1
+    }
+}
+.active ,.dots:hover{
+    background: #6f38ee;
+}
+
+
+/* my skills! */
 
 .contact{
        
@@ -263,51 +335,6 @@ footer{
 
 
 
-/* .features-prevoius-button,
-.features-next-button{
-    display: inline-block;
-    width: 0;
-    margin: 8px;
-    border: 10px;
-    position: absolute;
-    top: calc(50%-10px);
-    cursor: pointer;
-    vertical-align: top;
-} */
-
-/* .features-next-button{
-    border-left-color: white;
-    left: -30px;
-}
-
-.features-prevoius-button{
-    border-right-color: white;
-    left: -40px;
-} */
-
-/* .feature-carousel{
-    position: relative;
-}
-
-.about-navigation{
-    display: flex;
-} */
-
-/* .about-navigation span{
-    margin: 8px;
-    padding: 10px;
-    box-sizing: border-box;
-    background: #020107;
-    border-radius: 5px;  
-} */
-
-/* .about-navigation .active{
-    background: #ef7036;
-} */
-
-
-
-
 /* small screen setting */
 
 @media (max-width: 768px){
@@ -346,24 +373,6 @@ footer{
 /* medium screen settings */
 
 @media screen and (min-width: 769px) and (max-width: 999px){
-    nav{
-        /* height: 100px;
-        width: 100%; */
-        /* background-color: #120f31; */
-        /* overflow: hidden; */
-        /* position: fixed;
-        z-index: 101; */
-        /* opacity: 0.95;
-        display: flex;
-        justify-content: flex-end */
-
-        }
-        
-        /* .logo.img{
-            height: 80px;
-            width: 100%;
-          
-        } */
         
         .menu-bar {
             width: 100%;
@@ -383,7 +392,6 @@ footer{
         } 
         
         ul{
-            /* width: 100%; */
             margin: 0;
             padding: 0;
             display: flex;
@@ -395,42 +403,9 @@ footer{
                 
                 }
              
-         
-
-         /* ul li{
-                    list-style: none;
-                 }
-         
-                 ul li a:hover{
-                    text-decoration: none;
-                }
-                .logo{
-                    width: 100%;
-                }  */
-            
 }
 
 @media screen and (min-width: 1000px){
-
-   
-    /* nav{ */
-        /* height: 100px; */
-        /* width: 100%; */
-        /* background-color: #120f31; */
-        /* overflow: hidden; */
-        /* position: fixed; */
-        /* z-index: 101;
-        opacity: 0.95; */
-        /* display: flex;
-        justify-content: flex-end; */
-
-        /* } */
-        
-        /* .logo.img{
-            height: 80px;
-            width: 100%;
-          
-        } */
         
         .menu-bar {
             width: 100%;
@@ -450,9 +425,6 @@ footer{
         } 
         
         ul{
-            /* width: 100%; */
-            /* margin: 0;
-            padding: 0; */
             display: flex;
             justify-content: flex-end;
             align-items: center;
@@ -463,19 +435,9 @@ footer{
                 
                 }
              
-         
-                 /* ul li a:hover{
-                    text-decoration: none;
-                } */
                 .logo{
                     width: 100%;
                 } 
-
-        /* .logo-container{
-            display: flex;
-            justify-content: flex-start;
-            align-items: center;
-        } */
 
         h1{
             width: 80%;
@@ -496,10 +458,7 @@ footer{
             margin-top: 8px;
             height: auto;
             width: 60%;
-            /* position: fixed;
-            background-repeat: no-repeat;
-            z-index: -10; */
-        
+
         }
 
 
@@ -514,24 +473,6 @@ footer{
             justify-content: center;
             align-items: center;
             text-align: center;
-            /* flex-direction: column;
-            justify-content: center;
-            align-items: center; */
-/*     
-            width: 100%; */
         }
 
-        /* .face.img{
-            height: auto;
-            width: 50%;
-            position: relative;
-            z-index: 80;
-            
-            
-        } */
-        
-        /* img{
-            height: auto;
-            width: 100%;
-        } */
 }

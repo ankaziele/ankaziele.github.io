@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="main.css">
     <link href="https://fonts.googleapis.com/css?family=Handlee" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
 
 </head>
 
@@ -84,61 +85,109 @@
 
             </div>
 
-            <!-- <div class="feature-item2">
-                <img src="images/zdjecie-az.png" class="img-fluid" alt="az">
-    
-            </div> -->
         </div>
 
 
 
 
     </div>
+
+
+
     <div class="container-fluid">
-        <h2> <span id="contact-me" class="badge-secondary">Contact me</span></h2>
-
-        <div class="features">
-
-            <div class="contact">
-
-                <h3 class="h3contact">To find out more - Just send a message!</h3>
-                <br />
-                <br />
-
-
-            </div>
-
-        </div>
-
-
+        <h2> <span id="my-skills" class="badge-secondary">My Skills</span></h2>
     </div>
-    <footer>
-        <div>
+    <div class="caro">
 
-            <div class="footer-copyright text-center py-3">© 2018 Copyright:
-                <a href="#"> AniaZet</a>
+
+        <div class="slideshow-container">
+            <div class="slides fade">
+                <div class="number"> HTML</div>
+                <div> <img src="images/html.png" alt="Run"> </div>
+                <div class="caption"></div>
             </div>
-            <div class="smbuttons">
-                <a href="https://www.facebook.com/profile.php?id=100011918027749" class="fa fa-facebook"></a>
-                <a href="https://twitter.com/smartupseo" class="fa fa-twitter"></a>
-                <a href="https://plus.google.com/117618687160076899917" class="fa fa-google-plus"></a>
-                <a href="https://www.linkedin.com/in/anka-zielinska-613a71136/" class="fa fa-linkedin"></a>
-                <a href="https://github.com/ankaziele" class="fa fa-github"></a>
-                <a href="mailto:ziele.az@gmail.com" class="fa fa-envelope"></a>
+            <div class="slides">
+                <div class="number"> CSS </div>
+                <div> <img src="images/css.png" alt="Ski"> </div>
+                <div class="caption"></div>
+            </div>
+            <div class="slides">
+                <div class="number"> JavaScript </div>
+                <div> <img src="images/js.png" alt="Snowboard"> </div>
+                <div class="caption"></div>
+            </div>
+            <div class="slides">
+                <div class="number"> React </div>
+                <div> <img src="images/react.png" alt="Swim"> </div>
+                <div class="caption"></div>
+            </div>
+
+            <!-- ponizej dodajemy kod strzalek -->
+            
+            <a class="prev" onclick="plusIndex(-1)">&#10094;</a>
+            <a class="next" onclick="plusIndex(+1)">&#10095;</a>
+            
+
+
+            <br />
+
+            <div class="dots-container" style="text-align: center;">
+                <span class="dots" onclick="currentSlide(1)"></span>
+                <span class="dots" onclick="currentSlide(2)"></span>
+                <span class="dots" onclick="currentSlide(3)"></span>
+                <span class="dots" onclick="currentSlide(4)"></span>
 
             </div>
+
         </div>
 
-    </footer>
-    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
-    <script type="text/javascript">
-        $(document).ready(function () {
-            $('.menu').click(function () {
-                $('ul').toggleClass('active');
+        <div class="container-fluid">
+            <h2> <span id="contact-me" class="badge-secondary">Contact me</span></h2>
+
+            <div class="features">
+
+                <div class="contact">
+
+                    <h3 class="h3contact">To find out more - Just send a message!</h3>
+                    <a href="mailto:ziele.az@gmail.com" class="fa fa-envelope"></a>
+
+                    <br />
+                    <br />
+
+
+                </div>
+
+            </div>
+
+
+        </div>
+        <footer>
+            <div>
+
+                <div class="footer-copyright text-center py-3">© 2018 Copyright:
+                    <a href="#"> AniaZet</a>
+                </div>
+                <div class="smbuttons">
+                    <a href="https://www.facebook.com/profile.php?id=100011918027749" class="fa fa-facebook"></a>
+                    <a href="https://twitter.com/smartupseo" class="fa fa-twitter"></a>
+                    <a href="https://plus.google.com/117618687160076899917" class="fa fa-google-plus"></a>
+                    <a href="https://www.linkedin.com/in/anka-zielinska-613a71136/" class="fa fa-linkedin"></a>
+                    <a href="https://github.com/ankaziele" class="fa fa-github"></a>
+                    <a href="mailto:ziele.az@gmail.com" class="fa fa-envelope"></a>
+
+                </div>
+            </div>
+
+        </footer>
+        <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $('.menu').click(function () {
+                    $('ul').toggleClass('active');
+                })
             })
-        })
-    </script>
-    <script src="main.js"></script>
+        </script>
+        <script src="main.js"></script>
 </body>
 
 </html>

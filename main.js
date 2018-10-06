@@ -24,49 +24,37 @@ function toggleClasses(element, classes, time){
 }
 
 toggleClasses(
-    document.querySelector('.code'),
+    document.querySelector('.marketing'),
     ['one', 'two'],
-    2000
+    3000
 )
 
-//about me carousel
+var slideIndex = 1;
+        
+showImage(slideIndex);
+function showImage(n) {
+    var slide = document.getElementsByClassName('slides');
+    var dots = document.getElementsByClassName('dots');
+    
+    if (n > slide.length) { slideIndex = 1 };
 
-// var previousButton = document.querySelector('.features-prevoius-button');
-// var nextButton = document.querySelector('.features-next-button');
-// var navigation = document.querySelector('.about-navigation');
+    if (n < 1) { slideIndex = slide.length };
+    for(var i = 0; i < slide.length; i++){
+        slide[i].style.display = 'none'
+    }
+    
+    slide[slideIndex - 1].style.display = "block";
+    for(var i = 0; i < slide.length; i++){
+        dots[i].className = dots[i].className.replace(' active', '')
+    }
+    dots[slideIndex -1].className += ' active';
 
-// nextButton.addEventListener('click', function(){
-//     clearInterval(intervalId);
-//     activateNextSlide()
-// });
-// previousButton.addEventListener('click', function(){
-//     clearInterval(intervalId);
-//     activatePreviousSlide()
-// });
+}
 
-// var intervalId = setInterval(function(){
-//     activateNextSlide()
-// }, 2000);
+function plusIndex(n){
+    showImage(slideIndex += n);
+}
 
-// function activateNextSlide(){
-//     var element = document.querySelector('.features div:first-child');
-//     element.parentElement.appendChild(element);
-
-//     var current = navigation.querySelector('active');
-//     var next = current.nextElementSibling || navigation.querySelector('span');
-
-//     current.classList.remove('active');
-//     next.classList.add('active');
-// }
-
-
-// function activatePreviousSlide() {
-//   var element = document.querySelector('.features div:last-child');
-//   element.parentElement.prepend(element);
-
-//   var current = navigation.querySelector('.active');
-//   var previous = current.previousElementSibling || navigation.querySelector('span:last-child');
-
-//   current.classList.remove('active');
-//   previous.classList.add('active');
-// }
+function currentSlide(n){
+    showImage(slideIndex = n);
+}
